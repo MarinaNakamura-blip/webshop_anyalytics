@@ -1,24 +1,87 @@
 <!DOCTYPE html>
-<html>
-	<title>Kattbutiken</title>
-<head><link rel="stylesheet" href="style.css"></head>
+<html lang="sv">
+
+<head>
+    <title>Kattbutiken</title>
+
+    <!-- Kopplar HTML-sidan till CSS-filen -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
-	<header>
-		<h1>Kattbutiken</h1>
-	</header>
-	<nav>
-		<a href="#">Hem</a> | <a href="#">Klösträd</a> | <a href="#">Kattbädd</a> | <a href="#">Kattleksak</a>
-	</nav>
 
-	<section>
-		<h2>Latest Posts</h2>
-		<article>
-			<h3>Post Title</h3>
-			<p>This is a brief introduction to the blog post.</p>
-		</article>
-	</section>
+    <!-- HEADER → Vad är det här för webbplats? -->
+    <header>
+        <h1>Kattbutiken</h1>
+        <p>Allt din katt behöver på ett ställe</p>
+    </header>
 
-	<aside> 
+
+    <!-- NAV → Hur navigerar jag på webbplatsen? -->
+    <nav>
+        <a href="#">Hem</a>
+        <a href="#">Klösträd</a>
+        <a href="#">Kattbäddar</a>
+        <a href="#">Kattleksaker</a>
+    </nav>
+
+
+    <!-- MAIN → Vad handlar just den här sidan om? -->
+    <main>
+
+        <!-- Introduktion till startsidan -->
+        <section>
+            <h2>Välkommen till Kattbutiken</h2>
+            <p>Här hittar du utvalda produkter för din katt.</p>
+        </section>
+
+
+        <!-- SECTION → Här samlar vi butikens olika kategorier -->
+        <section>
+            <h2>Våra kategorier</h2>
+
+
+            <!-- Kategori: Klösträd -->
+            <article>
+                <h3>Klösträd</h3>
+
+                <img src="bilder/klostrad.jpg"
+                     alt="Klösträd för katter">
+
+                <p>Utforska våra klösträd för lek, klös och vila.</p>
+
+                <a class="knapp" href="#">Se klösträd</a>
+            </article>
+
+
+            <!-- Kategori: Kattbäddar -->
+            <article>
+                <h3>Kattbäddar</h3>
+
+                <img src="bilder/kattbadd.jpg"
+                     alt="Kattbädd">
+
+                <p>Bekväma bäddar för din katt.</p>
+
+                <a class="knapp" href="#">Se kattbäddar</a>
+            </article>
+
+
+            <!-- Kategori: Kattleksaker -->
+            <article>
+                <h3>Kattleksaker</h3>
+
+                <img src="bilder/kattleksak.jpg"
+                     alt="Kattleksaker">
+
+                <p>Leksaker för aktiva och nyfikna katter.</p>
+
+                <a class="knapp" href="#">Se kattleksaker</a>
+            </article>
+
+        </section>
+
+	<aside>
 		<h2>About Me</h2>
 		<p>Short bio or profile information.</p>
 	</aside>
@@ -27,4 +90,5 @@
 		<p>&copy; 2026 My Blog</p>
 	</footer>
 </body>
+
 </html>
