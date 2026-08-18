@@ -10,7 +10,11 @@ body {
 /* HEADER → Sidans huvud */
 header {
     text-align: center;
+    padding: 30px;
     margin-bottom: 20px;
+
+    border: 2px solid #333;
+    border-radius: 8px;
 }
 
 
@@ -59,7 +63,7 @@ article {
 }
 
 
-/* Bilderna */
+/* Bilderna i kategorierna */
 article img {
     width: 250px;
     height: auto;
@@ -69,7 +73,6 @@ article img {
 /* Knapparna under kategorierna */
 .knapp {
     display: inline-block;
-
     padding: 10px 15px;
 
     background-color: #333;
@@ -80,7 +83,7 @@ article img {
 }
 
 
-/* Effekt när muspekaren är över knappen */
+/* Effekt när muspekaren är över knapparna */
 .knapp:hover {
     background-color: #555;
 }
@@ -89,5 +92,9 @@ article img {
 /* FOOTER → Sidfoten */
 footer {
     text-align: center;
+    padding: 20px;
     margin-top: 50px;
+
+    border: 2px solid #333;
+    border-radius: 8px;
 }
