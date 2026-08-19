@@ -98,3 +98,32 @@ footer {
     border: 2px solid #333;
     border-radius: 8px;
 }
+
+
+
+/* Knappar för Lägg i varukorg */
+button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Effekt när muspekaren är över knappen */
+button:hover {
+    background-color: #555;
+}
+
+header {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
