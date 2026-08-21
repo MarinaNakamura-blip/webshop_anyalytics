@@ -9,8 +9,7 @@ body {
 
 /* HEADER → Sidans huvud */
 header {
-    text-align: center;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 20px;
 
     border: 2px solid #333;
@@ -18,10 +17,33 @@ header {
 }
 
 
+/* Innehållet i headern */
+.header-rad {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+
+/* Loggan */
+.logo {
+    position: static;
+}
+
+.logo img {
+    width: 100px;
+    height: 45px;
+    object-fit: contain;
+}
+
+
 /* NAV → Navigationen */
 nav {
-    text-align: center;
-    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
 }
 
 
@@ -29,7 +51,6 @@ nav {
 nav a {
     display: inline-block;
     padding: 10px 18px;
-    margin: 5px;
 
     background-color: #333;
     color: white;
@@ -42,6 +63,26 @@ nav a {
 /* Effekt när muspekaren är över navigationen */
 nav a:hover {
     background-color: #555;
+}
+
+
+/* Sökfältets område */
+.sok {
+    flex: 1;
+    max-width: 500px;
+}
+
+
+/* Själva sökfältet */
+.sok input {
+    width: 100%;
+    padding: 10px 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 
@@ -89,21 +130,10 @@ article img {
 }
 
 
-/* FOOTER → Sidfoten */
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-
-    border: 2px solid #333;
-    border-radius: 8px;
-}
-
-
-
 /* Knappar för Lägg i varukorg */
 button {
     padding: 10px 15px;
+
     background-color: #333;
     color: white;
 
@@ -118,12 +148,56 @@ button:hover {
     background-color: #555;
 }
 
-header {
-    position: relative;
+
+/* FOOTER → Sidfoten */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 20px;
+    margin-top: 50px;
+
+    border-top: 1px solid #ddd;
 }
 
-.logo {
-    position: absolute;
-    left: 20px;
-    top: 20px;
+
+/* Sociala medier */
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Adress och kundtjänst */
+.footer-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+
+/* Kortloggor */
+.footer-kort {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-kort span {
+    padding: 4px 7px;
+
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+    font-size: 11px;
+    font-weight: bold;
 }
