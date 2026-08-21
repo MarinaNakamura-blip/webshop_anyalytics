@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html lang="sv">
 
-    <head>
-        <title>Kattbutiken</title>
+<head>
+    <title>Kattbutiken</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <!-- Kopplar HTML-sidan till CSS-filen -->
-        <link rel="stylesheet" href="style.css">
-    </head>
+<body>
 
-    <body>
+    <header>
 
-        <!-- HEADER → Vad är det här för webbplats? -->
-        <header>
+        <div class="header-rad">
 
             <a href="index.html" class="logo">
-                <img src="images/logo.jpg" style="width:100px;height:45px;">
+                <img src="images/logo.jpg">
             </a>
 
-            <h1>Kattbutiken</h1>
-            <p>Allt din katt behöver på ett ställe</p>
-        </header>
+            <nav>
+                <a href="klostrad/klostrad.html">Klösträd</a>
+                <a href="kattsang/catbed.html">Kattbäddar</a>
+                <a href="kattleksaker/toy-boxing.html">Kattleksaker</a>
+            </nav>
+
+            <div class="sok">
+                <input type="text" placeholder="Vad letar du efter?">
+            </div>
+
+        </div>
+
+    </header>
 
 
-        <!-- NAV → Hur navigerar jag på webbplatsen? -->
-        <nav>
-            <a href="klostrad/klostrad.html">Klösträd</a>
-            <a href="kattbadar.html">Kattbäddar</a>
-            <a href="kattleksaker.html">Kattleksaker</a>
-        </nav>
+    <main>
+
+        <section>
+            <h2>Välkommen till Kattbutiken</h2>
+            <p>Här hittar du utvalda produkter för din katt.</p>
+        </section>
 
 
-        <!-- MAIN → Vad handlar just den här sidan om? -->
-        <main>
+        <section>
 
-            <!-- Introduktion till startsidan -->
-            <section>
-                <h2>Välkommen till Kattbutiken</h2>
-                <p>Här hittar du utvalda produkter för din katt.</p>
-            </section>
+            <h2>Våra kategorier</h2>
 
 
-            <!-- SECTION → Här samlar vi butikens olika kategorier -->
-            <section>
+            <article>
+                <h3>Klösträd</h3>
 
-                <h2>Våra kategorier</h2>
+                <img src="images/bredgatan.webp"
+                     alt="Klösträd för katter">
 
+                <p>Utforska våra klösträd för lek, klös och vila.</p>
 
-                <!-- Kategori: Klösträd -->
-                <article>
-                    <h3>Klösträd</h3>
-
-                    <img src="images/bredgatan.webp"
-                        alt="Klösträd för katter">
-
-                    <p>Utforska våra klösträd för lek, klös och vila.</p>
-
-                    <a class="knapp" href="klostrad/klostrad.html">Se klösträd</a>
-                </article>
+                <a class="knapp" href="klostrad/klostrad.html">
+                    Se klösträd
+                </a>
+            </article>
 
 
-                <!-- Kategori: Kattbäddar -->
-                <article>
-                    <h3>Kattbäddar</h3>
+            <article>
+                <h3>Kattbäddar</h3>
 
-                    <img src="images/helsingborg.webp"
-                        alt="Kattbädd">
+                <img src="images/lund.jpg"
+                     alt="Kattbädd">
 
-                    <p>Bekväma bäddar för din katt.</p>
+                <p>Bekväma bäddar för din katt.</p>
 
-                    <a class="knapp" href="kattbaddar.html">Se kattbäddar</a>
-                </article>
-
-
-                <!-- Kategori: Kattleksaker -->
-                <article>
-                    <h3>Kattleksaker</h3>
-
-                    <img src="images/kattleksak-kattmynta.jpg"
-                        alt="Kattleksaker">
-
-                    <p>Leksaker för aktiva och nyfikna katter.</p>
-
-                    <a class="knapp" href="kattleksaker.html">Se kattleksaker</a>
-                </article>
-
-            </section>
-
-        </main>
+                <a class="knapp" href="kattsang/catbed.html">
+                    Se kattbäddar
+                </a>
+            </article>
 
 
-        <!-- FOOTER → Information längst ner på sidan -->
-        <footer>
-            <p>&copy; 2026 Kattbutiken</p>
-            <p>Allt för din katt på ett ställe</p>
-        </footer>
+            <article>
+                <h3>Kattleksaker</h3>
 
-    </body>
+                <img src="images/kattleksak-kattmynta.jpg"
+                     alt="Kattleksaker">
+
+                <p>Leksaker för aktiva och nyfikna katter.</p>
+
+                <a class="knapp" href="kattleksaker/toy-boxing.html">
+                    Se kattleksaker
+                </a>
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="footer-social">
+            <span>▶</span>
+            <span>f</span>
+            <span>◎</span>
+            <span>in</span>
+        </div>
+
+        <div class="footer-info">
+            <p><strong>Besöksadress:</strong> Bredgatan 11, Helsingborg</p>
+            <p><strong>Kundtjänst:</strong> 042-123 45 67</p>
+        </div>
+
+        <div class="footer-kort">
+            <span>VISA</span>
+            <span>MC</span>
+            <span>AMEX</span>
+        </div>
+
+    </footer>
+
+</body>
 
 </html>
