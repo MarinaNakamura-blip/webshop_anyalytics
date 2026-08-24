@@ -10,39 +10,40 @@
 
     <header>
 
-        <div class="header-rad">
+        <a href="index.html">
+            <img src="images/logo.jpg" alt="Kattbutikens logga">
+        </a>
 
-            <a href="index.html" class="logo">
-                <img src="images/logo.jpg" />
-            </a>
+        <nav>
+            <a href="klostrad/klostrad.html">Klösträd</a>
+            <a href="kattsang/cat-bed.html">Kattbäddar</a>
+            <a href="kattleksaker/cattoy.html">Kattleksaker</a>
+        </nav>
 
-            <nav>
-                <a href="klostrad/klostrad.html">Klösträd</a>
-                <a href="kattsang/cat-bed.html">Kattbäddar</a>
-                <a href="kattleksaker/cattoy.html">Kattleksaker</a>
-            </nav>
+        <search>
+            <input type="search" placeholder="Vad letar du efter?">
+        </search>
 
-            <div class="sok">
-                <input type="text" placeholder="Vad letar du efter?">
-            </div>
-
-            <a href="#" class="varukorg" aria-label="Varukorg">
-                🛒
-            </a>
-
-        </div>
+        <button type="button" aria-label="Varukorg">
+            🛒
+        </button>
 
     </header>
 
 
     <main>
+
         <h1>Välkommen till Kattbutiken</h1>
         <p>Här hittar du utvalda produkter för din katt.</p>
 
 
         <section>
+
             <h2>Våra kategorier</h2>
+
+
             <article>
+
                 <h3>Klösträd</h3>
 
                 <img src="images/bredgatan.webp"
@@ -50,13 +51,16 @@
 
                 <p>Utforska våra klösträd för lek, klös och vila.</p>
 
-                <a href="klostrad/klostrad.html">
-                    <button>Se klösträd</button>
-                </a>
+                <button type="button"
+                        onclick="window.location.href='klostrad/klostrad.html'">
+                    Se klösträd
+                </button>
+
             </article>
 
 
             <article>
+
                 <h3>Kattbäddar</h3>
 
                 <img src="images/lund.jpg"
@@ -64,13 +68,16 @@
 
                 <p>Bekväma bäddar för din katt.</p>
 
-                <a class="knapp" href="kattsang/cat-bed.html">
+                <button type="button"
+                        onclick="window.location.href='kattsang/cat-bed.html'">
                     Se kattbäddar
-                </a>
+                </button>
+
             </article>
 
 
             <article>
+
                 <h3>Kattleksaker</h3>
 
                 <img src="images/kattleksak-kattmynta.jpg"
@@ -78,9 +85,11 @@
 
                 <p>Leksaker för aktiva och nyfikna katter.</p>
 
-                <a class="knapp" href="kattleksaker/cattoy.html">
+                <button type="button"
+                        onclick="window.location.href='kattleksaker/cattoy.html'">
                     Se kattleksaker
-                </a>
+                </button>
+
             </article>
 
         </section>

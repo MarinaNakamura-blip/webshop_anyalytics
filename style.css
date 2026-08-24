@@ -6,81 +6,71 @@ body {
 }
 
 
-/* HEADER → Sidans huvud */
+/* HEADER */
 header {
     width: 100%;
     background-color: #1f1f1f;
-    margin: 0 0 35px 0;
-    padding: 0;
-}
-
-
-/* Innehållet i headern */
-.header-rad {
-    width: 100%;
-    margin: 0;
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     gap: 20px;
 
     padding: 18px 30px;
+    margin-bottom: 35px;
+
     box-sizing: border-box;
 }
 
 
 /* Loggan */
-.logo {
-    position: static;
-}
-
-.logo img {
+header > a img {
     width: 100px;
     height: 45px;
+
     object-fit: contain;
     display: block;
 }
 
 
-/* NAV → Navigationen */
-nav {
+/* Navigationen i headern */
+header nav {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin: 0;
 }
 
 
-/* Länkarna i navigationen */
-nav a {
+/* Navigationsknappar */
+header nav a {
     display: inline-block;
+
     padding: 11px 18px;
 
     background-color: #343434;
     color: #f5f5f5;
 
     text-decoration: none;
+
     border-radius: 4px;
 }
 
 
-/* Effekt när muspekaren är över navigationen */
-nav a:hover {
+/* Hover på navigationsknappar */
+header nav a:hover {
     background-color: #4a4a4a;
 }
 
 
-/* Sökfältets område */
-.sok {
+/* SEARCH */
+header search {
     width: 400px;
-    flex: none;
 }
 
 
-/* Själva sökfältet */
-.sok input {
+/* Sökfält */
+header search input {
     width: 100%;
+
     padding: 12px 18px;
 
     background-color: #f7f7f7;
@@ -90,38 +80,42 @@ nav a:hover {
     border-radius: 22px;
 
     font-size: 16px;
+
     box-sizing: border-box;
 }
 
 
-/* Varukorg */
-.varukorg {
+/* Varukorgsknappen */
+header > button {
     margin-left: auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     width: 45px;
     height: 45px;
 
+    padding: 0;
+
+    background-color: transparent;
     color: white;
+
+    border: none;
+    border-radius: 5px;
+
     font-size: 25px;
 
-    text-decoration: none;
-    border-radius: 5px;
+    cursor: pointer;
 }
 
 
-/* Effekt när muspekaren är över varukorgen */
-.varukorg:hover {
+/* Hover på varukorgen */
+header > button:hover {
     background-color: #343434;
 }
 
 
-/* MAIN → Huvudinnehållet */
+/* MAIN */
 main {
     max-width: 1000px;
+
     margin: 0 auto;
     padding: 0 20px;
 
@@ -129,47 +123,42 @@ main {
 }
 
 
-/* Mellanrum mellan sektionerna */
-section {
-    margin-bottom: 40px;
+/* Huvudrubrik */
+main h1 {
+    margin-bottom: 10px;
 }
 
 
-/* Varje kategori */
+/* ARTICLE */
 article {
-    margin-bottom: 40px;
+    margin-top: 35px;
+    margin-bottom: 55px;
 }
 
 
-/* Bilderna i kategorierna */
+/* Produktbilder */
 article img {
-    width: 250px;
-    height: auto;
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    margin-top: 10px;
 }
 
 
-/* Knapparna under kategorierna */
-.knapp {
-    display: inline-block;
-    padding: 10px 15px;
+/* Produktbeskrivningar */
+article p {
+    max-width: 650px;
 
-    background-color: #343434;
-    color: white;
-
-    text-decoration: none;
-    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-/* Effekt när muspekaren är över knapparna */
-.knapp:hover {
-    background-color: #4a4a4a;
-}
-
-
-/* Knappar för Lägg i varukorg */
-button {
-    padding: 10px 15px;
+/* Alla vanliga knappar */
+article button {
+    padding: 10px 16px;
 
     background-color: #343434;
     color: white;
@@ -177,67 +166,67 @@ button {
     border: none;
     border-radius: 5px;
 
+    font-size: 14px;
+
     cursor: pointer;
 }
 
 
-/* Effekt när muspekaren är över knappen */
-button:hover {
+/* Hover på knappar */
+article button:hover {
     background-color: #4a4a4a;
 }
 
 
-/* FOOTER → Sidfoten */
+/* FOOTER */
 footer {
-    max-width: 1000px;
-    margin: 50px auto 0 auto;
+    max-width: 1100px;
+
+    margin: 60px auto 0 auto;
     padding: 25px 20px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    box-sizing: border-box;
+    gap: 20px;
+
     border-top: 1px solid #ddd;
+
+    box-sizing: border-box;
 }
 
 
-/* Sociala medier */
-.footer-social {
+/* Navigationerna i footern */
+footer nav {
     display: flex;
     align-items: center;
-    gap: 20px;
 
-    font-size: 20px;
+    gap: 15px;
+
+    font-size: 18px;
     font-weight: bold;
 }
 
 
-/* Adress och kundtjänst */
-.footer-info {
+/* Adress */
+footer address {
     display: flex;
     align-items: center;
+
     gap: 30px;
+
+    font-style: normal;
 }
 
-.footer-info p {
+
+/* Tar bort standardmarginal från adressens text */
+footer address p {
     margin: 0;
 }
 
 
-/* Kortloggor */
-.footer-kort {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.footer-kort span {
-    padding: 4px 7px;
-
-    border: 1px solid #ccc;
-    border-radius: 3px;
-
+/* Copyright */
+footer small {
     font-size: 11px;
-    font-weight: bold;
 }
