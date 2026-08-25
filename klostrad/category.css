@@ -1,5 +1,29 @@
-article img 
-{
-    width: 300px;
-    height: 300px;
+.produkter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.produkter article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.produkter article p:first-of-type {
+    min-height: 60px;
+}
+
+.produkter img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.produkter article button {
+    margin-top: auto;
 }
