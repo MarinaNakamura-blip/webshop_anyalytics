@@ -46,8 +46,8 @@ main section:last-of-type article {
 
 /* All pictures except the recommendations */
 article img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
 }
 
