@@ -1,0 +1,47 @@
+/* Startsidan */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    text-align: center;
+}
+
+
+/* Huvudrubrik */
+main h1 {
+    margin-bottom: 10px;
+}
+
+
+/* Kategorisektion */
+section {
+    margin-bottom: 40px;
+}
+
+
+/* Kategorier */
+article {
+    margin-top: 35px;
+    margin-bottom: 55px;
+}
+
+
+/* Kategoribilder */
+article img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    margin-top: 10px;
+}
+
+
+/* Kategoritext */
+article p {
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
