@@ -1,61 +1,131 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <a href="index.html">
-        <img src="logo.jpg" style="width:42px;height:42px;">
+<html lang="sv">
+
+<head>
+
+    <title>Kattbädd Malmö - Kattbutiken</title>
+
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../product.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="Kattbutikens logga">
         </a>
 
-        <a href="klostrad.html">Klösträd</a>
-        <a href="#">Kattbäddar</a>
-        <a href="#">Kattleksaker</a>
+        <nav>
+            <a href="../klostrad/klostrad.html">Klösträd</a>
+            <a href="cat-bed.html">Kattbäddar</a>
+            <a href="../kattleksaker/cattoy.html">Kattleksaker</a>
+        </nav>
 
-        
-        <title>Kattbädd - Malmö</title>
-        
-    </head>
-    <body>
-        <header>
-            <h1>Kattbädd  Malmö</h1>
-        </header>
-        <main>
-            <h2>Mysig och rymlig kattbädd</h2>
-            <article>
+        <search>
+            <input type="search" placeholder="Vad letar du efter?">
+        </search>
 
-                <img src="malmo.webp" alt="Kattbädd Malmö, framifrån " width="300" height="300">
-                <img src="malmo1.webp" alt="Kattbädd Malmö" width="300" height="300">
-                <img src="malmo2.webp" alt="Kattbädd Malmö" width="300" height="300">
-                <br><br>
+        <button type="button" aria-label="Varukorg">
+            🛒
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <h1>Kattbädd Malmö</h1>
+
+        <article class="product">
+
+            <section class="product-images">
+
+                <img src="../images/malmo.webp"
+                     alt="Kattbädd Malmö framifrån">
+
+                <img src="../images/malmo1.webp"
+                     alt="Kattbädd Malmö från sidan">
+
+                <img src="../images/malmo2.webp"
+                     alt="Kattbädd Malmö bakifrån">
+
+            </section>
+
+
+            <section class="product-info">
+
+                <h2>Mysig och rymlig kattbädd</h2>
 
                 <h3>Om produkten</h3>
+
                 <p>
-                Kattbädd Malmö är ett mysigt gömställe för katter. Det gulliga tältet är enkelt att 
-                fälla ihop och flytta efter behov.
+                    Kattbädd Malmö är ett mysigt gömställe för katter.
+                    Det gulliga tältet är enkelt att fälla ihop och
+                    flytta efter behov.
                 </p>
-               
+
                 <p>
-                Ett mysigt gömställe för katter. Beige och naturvita nyanser passar dessutom in i de 
-                flesta inredningar. Tältet är hopfällbart och har en vändbar kudde av mjukt polyester. 
-                Tältduken är av bomull och jute, med en halkfri botten. Tältduken kan tvättas för 
-                hand och kudden i maskin vid 40 grader på ett fintvättsprogram.
+                    Ett mysigt gömställe för katter. Beige och naturvita
+                    nyanser passar dessutom in i de flesta inredningar.
+                    Tältet är hopfällbart och har en vändbar kudde av
+                    mjukt polyester. Tältduken är av bomull och jute,
+                    med en halkfri botten. Tältduken kan tvättas för hand
+                    och kudden i maskin vid 40 grader på ett fintvättsprogram.
                 </p>
-                
+
                 <h3>Pris</h3>
+
                 <p>699 kr</p>
-                <br>
+
+                <button type="button">
+                    Lägg i varukorg
+                </button>
 
                 <h3>Produktinformation</h3>
+
                 <ul>
-                    <li> Färg: Beige</li>
-                    <li> Material: Polyester, bomull, ek</li>
-                    <li> Totala mått: L 55 x B 55 x H 65 cm</li>
-                    <li> Lämplig för katter upp till 8 kg</li>
+                    <li>Färg: Beige</li>
+                    <li>Material: Polyester, bomull, ek</li>
+                    <li>Totala mått: L 55 x B 55 x H 65 cm</li>
+                    <li>Lämplig för katter upp till 8 kg</li>
                 </ul>
 
-            </article>
-                <button>Lägg i varukorg</button>
-        </main>
-        <footer>
-            <p>&copy; 2026 Kattbutiken</p>
-        </footer>
-    </body>
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+
+        <nav>
+            <span>▶</span>
+            <span>f</span>
+            <span>◎</span>
+            <span>in</span>
+        </nav>
+
+        <address>
+            <p><strong>Besöksadress:</strong> Bredgatan 11, Helsingborg</p>
+            <p><strong>Kundtjänst:</strong> 042-123 45 67</p>
+        </address>
+
+        <nav>
+            <span>VISA</span>
+            <span>MC</span>
+            <span>AMEX</span>
+        </nav>
+
+        <small>
+            Copyright © 2026 Kattstatistik. All Rights Reserved.
+        </small>
+
+    </footer>
+
+</body>
+
 </html>
