@@ -1,62 +1,106 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Kattboxningssäck - Kattbutiken</title>
-        <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="../product.css">
-    </head>
-    <body>
-        <header>
-            <a href="index.html">
-            <img src="../images/logo.jpg">
-            </a>
+<html lang="sv">
 
+<head>
+
+    <title>Kattboxningssäck - Kattbutiken</title>
+
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../product.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="Kattbutikens logga">
+        </a>
+
+        <nav>
             <a href="../klostrad/klostrad.html">Klösträd</a>
             <a href="../kattsang/cat-bed.html">Kattbäddar</a>
             <a href="cattoy.html">Kattleksaker</a>
-        </header>
-        <main>
-            <h1>Kattboxningssäck</h1>
-            <p>Dynamisk, stabiloch hälsofrämjande</p>
+        </nav>
 
-                <img src="../images/toy_boxing.jpg" alt="Kattboxningssäck, framifrån">
-                <img src="../images/toy_boxing_2.jpg" alt="Kattboxningssäck">
-                <img src="../images/toy_boxing_3.jpg" alt="Kattboxningssäck">
+        <search>
+            <input type="search" placeholder="Vad letar du efter?">
+        </search>
 
-            <section>
-                    <h2>Om produkten</h2>
-                    <p>
-                    De fjäderbelastade boxhandskarna utför dynamiska hopp- och gungrörelser med variabel rotation. 
-                    Dessa växlande rörelser väcker din katts naturliga jaktinstinkt, fängslar den i timmar av lek 
-                    och verkar effektivt mot tristess i bostadskatter.
-                    </p>
+        <button type="button" aria-label="Varukorg">
+            🛒
+        </button>
 
-                    <p>
-                    Integrerade klockor och sprakande element skapar spännande ljud som omedelbart lockar katter. 
-                    Kattens boxningssäck är berikad med kattmynta och erbjuder visuell, akustisk och doftande 
-                    stimulans för långvarig, varierad lekglädje.t.
-                    </p>
-                </section>
+    </header>
 
-                
-                <section>
-                    <p>Pris</p>
-                    <p>1200 kr</p>
-                    <button>Köp produkten</button>
-                </section>
-             
-                <section>
-                    <h2>Produktinformation</h2>
-                    <ul>
-                        <li>Färg: Svart, röd</li>
-                        <li>Boxhandskar: 7 x 7 cm</li>
-                        <li>Höjd: 38 cm</li>
-                        <li>Förpackningsstorlek: 20 x 10 x 13,5 cm</li>
-                    </ul>
-                </section>
-        </main>
-        
-        <footer>
+
+    <main>
+
+        <h1>Kattboxningssäck</h1>
+
+        <article class="product">
+
+            <section class="product-images">
+
+                <img src="../images/toy_boxing.jpg"
+                     alt="Kattboxningssäck framifrån">
+
+                <img src="../images/toy_boxing_2.jpg"
+                     alt="Kattboxningssäck från sidan">
+
+                <img src="../images/toy_boxing_3.jpg"
+                     alt="Kattboxningssäck">
+
+            </section>
+
+
+            <section class="product-info">
+
+                <h2>Dynamisk, stabil och hälsofrämjande</h2>
+
+                <h3>Om produkten</h3>
+
+                <p>
+                    De fjäderbelastade boxhandskarna utför dynamiska hopp- och gungrörelser
+                    med variabel rotation. Dessa växlande rörelser väcker din katts naturliga
+                    jaktinstinkt, fängslar den i timmar av lek och verkar effektivt mot tristess
+                    i bostadskatter.
+                </p>
+
+                <p>
+                    Integrerade klockor och sprakande element skapar spännande ljud som
+                    omedelbart lockar katter. Kattens boxningssäck är berikad med kattmynta
+                    och erbjuder visuell, akustisk och doftande stimulans för långvarig,
+                    varierad lekglädje.
+                </p>
+
+                <h3>Pris</h3>
+
+                <p>1200 kr</p>
+
+                <button type="button">
+                    Lägg i varukorg
+                </button>
+
+                <h3>Produktinformation</h3>
+
+                <ul>
+                    <li>Färg: Svart, röd</li>
+                    <li>Boxhandskar: 7 x 7 cm</li>
+                    <li>Höjd: 38 cm</li>
+                    <li>Förpackningsstorlek: 20 x 10 x 13,5 cm</li>
+                </ul>
+
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+
         <nav>
             <span>▶</span>
             <span>f</span>
@@ -78,6 +122,9 @@
         <small>
             Copyright © 2026 Kattstatistik. All Rights Reserved.
         </small>
+
     </footer>
-    </body>
+
+</body>
+
 </html>
