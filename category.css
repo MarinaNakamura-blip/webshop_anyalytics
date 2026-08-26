@@ -1,9 +1,8 @@
 main {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 70px;
-    max-width: 1200px;
-    margin: 40px auto;
+    grid-template-columns: repeat(3, 300px);
+    gap: 40px;
+    justify-content: center;
 }
 
 main > h1 {
