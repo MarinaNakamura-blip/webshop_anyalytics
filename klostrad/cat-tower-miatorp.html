@@ -1,47 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <a href="index.html">
-        <img src="../images/logo.jpg" style="width:42px;height:42px;">
+<html lang="sv">
+
+<head>
+
+    <title>Klösträd Miatorp - Kattbutiken</title>
+
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../product.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="Kattbutikens logga">
         </a>
 
-        <a href="../klostrad/klostrad.html">Klösträd</a>
-        <a href="#">Kattbäddar</a>
-        <a href="#">Kattleksaker</a>
+        <nav>
+            <a href="klostrad.html">Klösträd</a>
+            <a href="../kattsang/cat-bed.html">Kattbäddar</a>
+            <a href="../kattleksaker/cattoy.html">Kattleksaker</a>
+        </nav>
 
-        
-        <title>Klösträd Beige - Kattbutiken</title>
-        
-    </head>
-    <body>
-        <header>
-            <h1>Klösträd Miatorp</h1>
-        </header>
-        <main>
-            <h2>Fudajo Designer Katträd</h2>
-            <article>
+        <search>
+            <input type="search" placeholder="Vad letar du efter?">
+        </search>
 
-                <img src="../images/miatorp.jpg" alt="Klösträd Bredgatan, framifrån " width="300" height="300">
-                <img src="../images/miatorp_1.jpg" alt="Klösträd Bredgatan" width="300" height="300">
-                <br><br>
+        <button type="button" aria-label="Varukorg">
+            🛒
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <h1>Klösträd Miatorp</h1>
+
+        <article class="product">
+
+            <section class="product-images">
+
+                <img src="../images/miatorp.jpg"
+                     alt="Klösträd Miatorp framifrån">
+
+                <img src="../images/miatorp_1.jpg"
+                     alt="Klösträd Miatorp från sidan">
+
+            </section>
+
+
+            <section class="product-info">
+
+                <h2>Fudajo Designer Katträd</h2>
 
                 <h3>Om produkten</h3>
-                <p> Ge dina kattvänner en välförtjänt lyx med vårt funktions-packade katträd! 
-                Detta lekcenter med flera nivåer och massiv ram täckt i mjuk och bekväm plysch, 
-                är en trygg plats för dina katter att klösa, klättra, sitta, gömma sig och vila</p>
 
                 <p>
-                Fudajo katträd kombinerar elegant design med hög komfort och stabil konstruktion. 
-                Med tre mjukt stoppade liggplatser i lyxig plysch får katten bekväma utsiktsplatser, 
-                medan den slitstarka sisalstolpen ger en perfekt yta för klösning. 
-                Ett stilrent och praktiskt tillskott som både katten och hemmet kommer att uppskatta.
+                    Ge dina kattvänner en välförtjänt lyx med vårt funktions-packade katträd!
+                    Detta lekcenter med flera nivåer och massiv ram täckt i mjuk och bekväm plysch,
+                    är en trygg plats för dina katter att klösa, klättra, sitta, gömma sig och vila.
                 </p>
-                
+
+                <p>
+                    Fudajo katträd kombinerar elegant design med hög komfort och stabil konstruktion.
+                    Med tre mjukt stoppade liggplatser i lyxig plysch får katten bekväma utsiktsplatser,
+                    medan den slitstarka sisalstolpen ger en perfekt yta för klösning.
+                    Ett stilrent och praktiskt tillskott som både katten och hemmet kommer att uppskatta.
+                </p>
+
                 <h3>Pris</h3>
+
                 <p>1699 kr</p>
-                <br>
+
+                <button type="button">
+                    Lägg i varukorg
+                </button>
 
                 <h3>Produktinformation</h3>
+
                 <ul>
                     <li>Varumärke: Fudajo</li>
                     <li>Modellnummer: 65611</li>
@@ -51,11 +90,39 @@
                     <li>Färg: Krämfärgad</li>
                 </ul>
 
-            </article>
-                <button>Lägg i varukorg</button>
-        </main>
-        <footer>
-            <p>&copy; 2026 Kattbutiken</p>
-        </footer>
-    </body>
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+
+        <nav>
+            <span>▶</span>
+            <span>f</span>
+            <span>◎</span>
+            <span>in</span>
+        </nav>
+
+        <address>
+            <p><strong>Besöksadress:</strong> Bredgatan 11, Helsingborg</p>
+            <p><strong>Kundtjänst:</strong> 042-123 45 67</p>
+        </address>
+
+        <nav>
+            <span>VISA</span>
+            <span>MC</span>
+            <span>AMEX</span>
+        </nav>
+
+        <small>
+            Copyright © 2026 Kattstatistik. All Rights Reserved.
+        </small>
+
+    </footer>
+
+</body>
+
 </html>
