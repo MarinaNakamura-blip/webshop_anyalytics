@@ -1,0 +1,20 @@
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.product-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 300px;
+    height: 250px;
+    object-fit: contain;
+}
