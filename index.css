@@ -3,45 +3,62 @@ main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
-
     text-align: center;
 }
 
-
-/* Huvudrubrik */
-main h1 {
-    margin-bottom: 10px;
-}
-
-
-/* Kategorisektion */
 section {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
-
-/* Kategorier */
-article {
-    margin-top: 35px;
-    margin-bottom: 55px;
+/* Recommended products */
+main section:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px
 }
 
+main section:first-of-type a {
+    text-decoration: none;
+    color: black;
+    background-color: #dbad90;
+    padding: 10px;
+    border-radius: 20px;
+}
 
-/* Kategoribilder */
-article img {
-    width: 250px;
-    height: 250px;
-
+main section:first-of-type article img {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
-
-    margin-top: 10px;
 }
 
+/* Categories */
+main section:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+main section:last-of-type article {
+    background-color: #dedcdb;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* All pictures except the recommendations */
+article img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Section headings */
+main section h2{
+    grid-column: 1 / -1;
+    text-align: left;
+    margin-bottom: 3px;
+}
 
 /* Kategoritext */
 article p {
-    max-width: 650px;
-
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 17px
 }
