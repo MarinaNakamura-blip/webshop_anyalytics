@@ -1,61 +1,130 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <a href="index.html">
-        <img src="../images/logo.jpg" style="width:42px;height:42px;">
+<html lang="sv">
+
+<head>
+
+    <title>Klösträd Bredgatan - Kattbutiken</title>
+
+    <link rel="stylesheet" href="../base.css">
+    <link rel="stylesheet" href="../product.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <a href="../index.html">
+            <img src="../images/logo.jpg" alt="Kattbutikens logga">
         </a>
 
-        <a href="../klostrad/klostrad.html">Klösträd</a>
-        <a href="#">Kattbäddar</a>
-        <a href="#">Kattleksaker</a>
+        <nav>
+            <a href="klostrad.html">Klösträd</a>
+            <a href="../kattsang/cat-bed.html">Kattbäddar</a>
+            <a href="../kattleksaker/cattoy.html">Kattleksaker</a>
+        </nav>
 
-        
-        <title>Klösträd Beige - Kattbutiken</title>
-        
-    </head>
-    <body>
-        <header>
-            <h1>Klösträd Bredgatan</h1>
-        </header>
-        <main>
-            <p>Klösträd med sisalpelare, beige</p>
-            <article>
+        <search>
+            <input type="search" placeholder="Vad letar du efter?">
+        </search>
 
-                <img src="../images/bredgatan.webp" alt="Klösträd Bredgatan, framifrån " width="300" height="300">
-                <img src="../images/bredgatan1.webp" alt="Klösträd Bredgatan" width="300" height="300">
-                <img src="../images/bredgatan2.webp" alt="Klösträd Bredgatan" width="300" height="300">
-                <br><br>
+        <button type="button" aria-label="Varukorg">
+            🛒
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <h1>Klösträd Bredgatan</h1>
+
+        <article class="product">
+
+            <section class="product-images">
+
+                <img src="../images/bredgatan.webp"
+                     alt="Klösträd Bredgatan framifrån">
+
+                <img src="../images/bredgatan1.webp"
+                     alt="Klösträd Bredgatan från sidan">
+
+                <img src="../images/bredgatan2.webp"
+                     alt="Klösträd Bredgatan ovanifrån">
+
+            </section>
+
+
+            <section class="product-info">
+
+                <h2>Klösträd med sisalpelare, beige</h2>
 
                 <h3>Om produkten</h3>
-                <p>Ge dina kattvänner en välförtjänt lyx med vårt funktions-packade katträd! 
-                Detta lekcenter med flera nivåer och massiv ram täckt i mjuk och bekväm plysch, 
-                är en trygg plats för dina katter att klösa, klättra, sitta, gömma sig och vila</p>
 
                 <p>
-                Dina kattvänner kan vässa sina klor på klöspelarna som är inlindade i sisalrep, 
-                vilket ger dem ett hälsosamt utlopp för sina klösinstinkter. 
-                De kommer dessutom kunna roa sig med att jaga varandra samtidigt som de hoppar upp 
-                och ner i detta roliga lekcenter. När de har fått nog av leken, kan dina små vänner 
-                vila ut på de övre plattformarna varifrån de också får en bättre överblick.
+                    Ge dina kattvänner en välförtjänt lyx med vårt funktions-packade katträd!
+                    Detta lekcenter med flera nivåer och massiv ram täckt i mjuk och bekväm plysch,
+                    är en trygg plats för dina katter att klösa, klättra, sitta, gömma sig och vila.
                 </p>
-                
+
+                <p>
+                    Dina kattvänner kan vässa sina klor på klöspelarna som är inlindade i sisalrep,
+                    vilket ger dem ett hälsosamt utlopp för sina klösinstinkter.
+                    De kommer dessutom kunna roa sig med att jaga varandra samtidigt som de hoppar upp
+                    och ner i detta roliga lekcenter. När de har fått nog av leken, kan dina små vänner
+                    vila ut på de övre plattformarna varifrån de också får en bättre överblick.
+                </p>
+
                 <h3>Pris</h3>
+
                 <p>2999 kr</p>
-                <br>
+
+                <button type="button">
+                    Lägg i varukorg
+                </button>
 
                 <h3>Produktinformation</h3>
+
                 <ul>
-                    <li> Färg: Beige</li>
-                    <li> Material: Träram + sisalrep + mjuk plysch</li>
-                    <li> Totala mått: 67 x 67 x 125 cm (L x B x H)</li>
-                    <li> Med stege, hus, klöspelare och plattformar</li>
+                    <li>Färg: Beige</li>
+                    <li>Material: Träram + sisalrep + mjuk plysch</li>
+                    <li>Totala mått: 67 x 67 x 125 cm (L x B x H)</li>
+                    <li>Med stege, hus, klöspelare och plattformar</li>
                 </ul>
 
-            </article>
-                <button>Lägg i varukorg</button>
-        </main>
-        <footer>
-            <p>&copy; 2026 Kattbutiken</p>
-        </footer>
-    </body>
+            </section>
+
+        </article>
+
+    </main>
+
+
+    <footer>
+
+        <nav>
+            <span>▶</span>
+            <span>f</span>
+            <span>◎</span>
+            <span>in</span>
+        </nav>
+
+        <address>
+            <p><strong>Besöksadress:</strong> Bredgatan 11, Helsingborg</p>
+            <p><strong>Kundtjänst:</strong> 042-123 45 67</p>
+        </address>
+
+        <nav>
+            <span>VISA</span>
+            <span>MC</span>
+            <span>AMEX</span>
+        </nav>
+
+        <small>
+            Copyright © 2026 Kattstatistik. All Rights Reserved.
+        </small>
+
+    </footer>
+
+</body>
+
 </html>
