@@ -1,8 +1,7 @@
 main {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-    gap: 40px;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 main > h1 {
@@ -17,12 +16,8 @@ main > article {
     text-align: center;
 }
 
-main > article p:first-of-type {
-    min-height: 60px;
-}
-
-main > img {
-    width: 100%;
+article img {
+    width: 250px;
     height: 250px;
     object-fit: contain;
 }
