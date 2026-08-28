@@ -18,3 +18,11 @@
     height: 250px;
     object-fit: contain;
 }
+
+.product-info details {
+    margin-top: 50px;
+}
+
+.product-info details + details {
+    margin-top: 15px;
+}
