@@ -23,7 +23,7 @@
     <!-- End Google Tag Manager (noscript) -->
     <header>
         <a href="index.html">
-            <img src="images/logo.jpg" alt="Kattbutikens logga">
+            <img itemprop="logo" src="images/logo.jpg" alt="Kattbutikens logga">
         </a>
 
         <nav>
@@ -49,64 +49,93 @@
             <h2>Bästsäljare</h2>
 
             <a href="klostrad/cat-tower-miatorp.html">
-                <article>
-                    <img src="images/miatorp.jpg" alt="Klösträd Miatorp">
-                    <h3>Klösträd Miatorp</h3>
+                <article itemscope itemtype="https://schema.org/Product">
+                    <img itemprop="image" src="images/miatorp.jpg" alt="Klösträd Miatorp">
+                    <h3 itemprop="name"> Klösträd Miatorp</h3>
                 </article>
             </a>
             
             <a href="kattsang/cat-bed-malmo.html">
-                <article>
-                    <img src="images/malmo.webp" alt="Kattbädd Malmö">
-                    <h3>Kattbädd Malmö</h3>
+                <article itemscope itemtype="https://schema.org/Product">
+                    <img itemprop="image" src="images/malmo.webp" alt="Kattbädd Malmö">
+                    <h3 itemprop="name"> Kattbädd Malmö</h3>
                 </article>
             </a>
 
             <a href="kattleksaker/toy-boxing.html">
-                <article>
-                    <img src="images/toy_boxing.jpg" alt="Kattboxningssäck">
-                    <h3>Kattleksak Kattboxingssäck</h3>
+                <article itemscope itemtype="https://schema.org/Product">
+                    <img itemprop="image" src="images/toy_boxing.jpg" alt="Kattboxningssäck">
+                    <h3 itemprop="name"> Kattleksak Kattboxingssäck</h3>
                 </article>
             </a>
 
         </section>
 
-        <section>
-            <h2>Hitta via produktkategorier</h2>
-            
-            <article>
-                <h3>Klösträd</h3>
-                <img src="images/bredgatan.webp"
-                     alt="Klösträd för katter">
-                <p>Utforska våra klösträd för lek, klös och vila.</p>
-                <button type="button"
-                        onclick="window.location.href='klostrad/klostrad.html'">
-                    Se klösträd
-                </button>
-            </article>
+<section>
+    <h2>Hitta via produktkategorier</h2>
 
-            <article>
-                <h3>Kattbäddar</h3>
-                <img src="images/lund.jpg"
-                     alt="Kattbädd">
-                <p>Bekväma bäddar för din katt.</p>
-                <button type="button"
-                        onclick="window.location.href='kattsang/cat-bed.html'">
-                    Se kattbäddar
-                </button>
-            </article>
+    <article itemscope itemtype="https://schema.org/CollectionPage">
+        <h3 itemprop="name">Klösträd</h3>
 
-            <article>
-                <h3>Kattleksaker</h3>
-                <img src="images/kattleksak-kattmynta.jpg"
-                     alt="Kattleksaker">
-                <p>Leksaker för aktiva och nyfikna katter.</p>
-                <button type="button"
-                        onclick="window.location.href='kattleksaker/cattoy.html'">
-                    Se kattleksaker
-                </button>
-            </article>
-        </section>
+        <img itemprop="image"
+             src="images/bredgatan.webp"
+             alt="Klösträd för katter">
+
+        <p itemprop="description">
+            Utforska våra klösträd för lek, klös och vila.
+        </p>
+
+        <meta itemprop="url"
+              content="klostrad/klostrad.html">
+
+        <button type="button"
+                onclick="window.location.href='klostrad/klostrad.html'">
+            Se klösträd
+        </button>
+    </article>
+
+
+    <article itemscope itemtype="https://schema.org/CollectionPage">
+        <h3 itemprop="name">Kattbäddar</h3>
+
+        <img itemprop="image"
+             src="images/lund.jpg"
+             alt="Kattbädd">
+
+        <p itemprop="description">
+            Bekväma bäddar för din katt.
+        </p>
+
+        <meta itemprop="url"
+              content="kattsang/cat-bed.html">
+
+        <button type="button"
+                onclick="window.location.href='kattsang/cat-bed.html'">
+            Se kattbäddar
+        </button>
+    </article>
+
+
+    <article itemscope itemtype="https://schema.org/CollectionPage">
+        <h3 itemprop="name">Kattleksaker</h3>
+
+        <img itemprop="image"
+             src="images/kattleksak-kattmynta.jpg"
+             alt="Kattleksaker">
+
+        <p itemprop="description">
+            Leksaker för aktiva och nyfikna katter.
+        </p>
+
+        <meta itemprop="url"
+              content="kattleksaker/cattoy.html">
+
+        <button type="button"
+                onclick="window.location.href='kattleksaker/cattoy.html'">
+            Se kattleksaker
+        </button>
+      </article>
+     </section>
     </main>
    
     <footer>
