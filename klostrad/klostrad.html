@@ -2,17 +2,30 @@
 <html lang="sv">
 
 <head>
+    <meta charset="UTF-8">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KD4LQ7KC');</script>
+    <!-- End Google Tag Manager -->
+
     <title>Klösträd - Kattbutiken</title>
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="../category.css">
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD4LQ7KC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header>
-
         <a href="../index.html">
-            <img src="../images/logo.jpg" alt="Kattbutikens logga">
+            <img itemprop="logo" src="../images/logo.jpg" alt="Kattbutikens logga">
         </a>
 
         <nav>
@@ -28,88 +41,77 @@
         <button type="button" aria-label="Varukorg">
             🛒
         </button>
-
     </header>
 
-
     <main>
-
         <h1>Kategori: Klösträd</h1>
-
-    
-        <article>
-
-            <h2>Klösträd Bredgatan</h2>
-
-            <p>
+        <article itemscope itemtype="https://schema.org/Product">
+            <h2 itemprop="name">Klösträd Bredgatan</h2>
+            <p itemprop="description">
                 Ett stort och mångsidigt klösträd med flera nivåer,
                 sovplatser och klöspelare för en aktiv katt.
             </p>
 
             <a href="cat-tower-bredgatan.html">
-                <img src="../images/bredgatan.webp"
-                     alt="Klösträd Bredgatan">
+                <img itemprop="image" src="../images/bredgatan.webp" alt="Klösträd Bredgatan">
             </a>
 
-            <p>Pris: 2999 kr</p>
+            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                Price: <span itemprop="price">2999</span>kr
+                <meta itemprop="priceCurrency" content="SEK" />
+            </p>
 
             <button type="button">
                 Lägg i varukorg
             </button>
-
         </article>
 
 
-        <article>
-
-            <h2>Klösträd Miatorp</h2>
-
-            <p>
+        <article itemscope itemtype="https://schema.org/Product">
+            <h2 itemprop="name">Klösträd Miatorp</h2>
+            <p itemprop="description">
                 Ett elegant och mysigt klösträd med mjuka viloplatser
                 som passar perfekt för både lek och avkoppling.
             </p>
 
             <a href="cat-tower-miatorp.html">
-                <img src="../images/miatorp.jpg"
-                     alt="Klösträd Miatorp">
+                <img itemprop="image" src="../images/miatorp.jpg" alt="Klösträd Miatorp">
             </a>
 
-            <p>Pris: 1699 kr</p>
+            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                Price: <span itemprop="price">1699</span>kr
+                <meta itemprop="priceCurrency" content="SEK" />
+            </p>
 
             <button type="button">
                 Lägg i varukorg
             </button>
-
         </article>
 
 
-        <article>
-
-            <h2>Klösträd Olympia</h2>
-
-            <p>
+        <article itemscope itemtype="https://schema.org/Product">
+            <h2 itemprop="name">Klösträd Olympia</h2>
+            <p itemprop="description">
                 Ett lekfullt klösträd med flera mysiga krypin där katten
                 kan klättra, leka och vila.
             </p>
 
             <a href="cat-tower-olympia.html">
-                <img src="../images/cat_tower_olympia.jpg"
-                     alt="Klösträd Olympia">
+                <img itemprop="image" src="../images/cat_tower_olympia.jpg" alt="Klösträd Olympia">
             </a>
 
-            <p>Pris: 3499 kr</p>
+            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                Price: <span itemprop="price">3499</span>kr
+                <meta itemprop="priceCurrency" content="SEK" />
+            </p>
 
             <button type="button">
                 Lägg i varukorg
             </button>
-
         </article>
-    
     </main>
 
-
     <footer>
-
         <nav>
             <span>▶</span>
             <span>f</span>
@@ -131,9 +133,6 @@
         <small>
             Copyright © 2026 Kattstatistik. All Rights Reserved.
         </small>
-
     </footer>
-
 </body>
-
 </html>
