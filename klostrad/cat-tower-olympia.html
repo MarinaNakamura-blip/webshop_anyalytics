@@ -2,24 +2,31 @@
 <html lang="sv">
 
 <head>
+    <meta charset="UTF-8">
+
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KD4LQ7KC');</script>
 
     <title>Klösträd Olympia - Kattbutiken</title>
-
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="../product.css">
-
 </head>
 
 <body>
 
-    <header>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD4LQ7KC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
+    <header>
         <a href="../index.html">
-            <img src="../images/logo.jpg" alt="Kattbutikens logga">
+            <img itemprop="logo" src="../images/logo.jpg" alt="Kattbutikens logga">
         </a>
 
         <nav>
-            <a href="klostrad.html">Klösträd</a>
+            <a href="../klostrad/klostrad.html">Klösträd</a>
             <a href="../kattsang/cat-bed.html">Kattbäddar</a>
             <a href="../kattleksaker/cattoy.html">Kattleksaker</a>
         </nav>
@@ -31,39 +38,26 @@
         <button type="button" aria-label="Varukorg">
             🛒
         </button>
-
     </header>
 
-
     <main>
-
         <h1>Klösträd Olympia</h1>
 
-        <article class="product">
+        <article class="product" itemscope itemtype="https://schema.org/Product">
 
             <section class="product-images">
-
-                <img src="../images/cat_tower_olympia.jpg"
-                     alt="Klösträd Olympia framifrån">
-
-                <img src="../images/cat_tower_olympia_2.jpg"
-                     alt="Klösträd Olympia från sidan">
-
-                <img src="../images/cat_tower_olympia_3.jpg"
-                     alt="Klösträd Olympia ovanifrån">
-
+                <img itemprop="image" src="../images/cat_tower_olympia.jpg" alt="Klösträd Olympia framifrån">
+                <img src="../images/cat_tower_olympia_2.jpg" alt="Klösträd Olympia från sidan">
+                <img src="../images/cat_tower_olympia_3.jpg" alt="Klösträd Olympia ovanifrån">
             </section>
 
-
             <section class="product-info">
-
-                <h2>Design, stabilitet och roligt</h2>
+                <h2 itemprop="name">Design, stabilitet och roligt</h2>
 
                 <h3>Om produkten</h3>
 
-                <p>
-                    Vi insåg denna vackra design för dig efter mycket lång planering.
-                    Olymp-skrapstolpen kan användas för vuxna katter, kattungar
+                <p itemprop="description">
+                    Olympia klösträd kan användas för vuxna katter, kattungar
                     eller till och med små hundar.
                 </p>
 
@@ -77,7 +71,10 @@
 
                 <h3>Pris</h3>
 
-                <p>3499 kr</p>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    Price: <span itemprop="price">3499</span>kr
+                    <meta itemprop="priceCurrency" content="SEK">
+                </p>
 
                 <button type="button">
                     Lägg i varukorg
@@ -91,16 +88,12 @@
                     <li>Totala mått: 60 x 66 x 80 cm (L x B x H)</li>
                     <li>Med klöspelare och plattformar</li>
                 </ul>
-
             </section>
 
         </article>
-
     </main>
 
-
     <footer>
-
         <nav>
             <span>▶</span>
             <span>f</span>
@@ -122,9 +115,7 @@
         <small>
             Copyright © 2026 Kattstatistik. All Rights Reserved.
         </small>
-
     </footer>
 
 </body>
-
 </html>
