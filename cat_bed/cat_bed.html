@@ -2,17 +2,30 @@
 <html lang="sv">
 
 <head>
+    <meta charset="UTF-8">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KD4LQ7KC');</script>
+    <!-- End Google Tag Manager -->
+
     <title>Kattbäddar - Kattbutiken</title>
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="../category.css">
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD4LQ7KC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header>
-
         <a href="../index.html">
-            <img src="../images/logo.jpg" alt="Kattbutikens logga">
+            <img itemprop="logo" src="../images/logo.jpg" alt="Kattbutikens logga">
         </a>
 
         <nav>
@@ -28,87 +41,70 @@
         <button type="button" aria-label="Varukorg">
             🛒
         </button>
-
     </header>
 
-
     <main>
-
-        <h1>Kattbäddar</h1>
-
-
-        <article>
-
-            <h2>Kattbädd Helsingborg</h2>
-
-            <p>
-                En elegant och bekväm kattbädd med mjuk dyna,
-                höga kanter och lågt insteg.
-            </p>
+        <h1>Kategori: Kattbäddar</h1>
+        <article itemscope itemtype="https://schema.org/Product">
+            <h2 itemprop="name">Kattbädd Helsingborg</h2>
+            <p itemprop="description">En elegant och bekväm kattbädd med mjuk dyna, höga kanter och lågt insteg.</p>
 
             <a href="cat-bed-helsingborg.html">
-                <img src="../images/helsingborg.webp"
-                     alt="Kattbädd Helsingborg">
+                <img itemprop="image" src="../images/helsingborg.webp" alt="Kattbädd Helsingborg">
             </a>
 
-            <p>Pris: 1499 kr</p>
+            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                Pris: <span itemprop="price">1499</span> kr
+                <meta itemprop="priceCurrency" content="SEK" />
+            </p>
 
             <button type="button">
                 Lägg i varukorg
             </button>
-
         </article>
 
-
-        <article>
-
-            <h2>Kattbädd Lund</h2>
-
-            <p>
-                En mysig och multifunktionell kattbädd med stilren design
-                och mjuka, tvättbara kuddar.
+        <article itemscope itemtype="https://schema.org/Product">
+            <h2 itemprop="name">Kattbädd Lund</h2>
+            <p itemprop="description">
+                En mysig och multifunktionell kattbädd med stilren design och mjuka, tvättbara kuddar.
             </p>
 
             <a href="cat-bed-lund.html">
-                <img src="../images/lund.jpg"
-                     alt="Kattbädd Lund">
+                <img itemprop="image" src="../images/lund.jpg" alt="Kattbädd Lund">
             </a>
 
-            <p>Pris: 999 kr</p>
+            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                Pris: <span itemprop="price">999</span> kr
+                <meta itemprop="priceCurrency" content="SEK" />
+            </p>
 
             <button type="button">
                 Lägg i varukorg
             </button>
-
         </article>
 
-
-        <article>
-
-            <h2>Kattbädd Malmö</h2>
-
-            <p>
+        <article itemscope itemtype="https://schema.org/Product">
+            <h2 itemprop="name">Kattbädd Malmö</h2>
+            <p itemprop="description">
                 En mysig och rymlig kattbädd i form av ett hopfällbart tält.
             </p>
 
             <a href="cat-bed-malmo.html">
-                <img src="../images/malmo.webp"
-                     alt="Kattbädd Malmö">
+                <img itemprop="image" src="../images/malmo.webp" alt="Kattbädd Malmö">
             </a>
 
-            <p>Pris: 699 kr</p>
+            <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                Pris: <span itemprop="price">699</span> kr
+                <meta itemprop="priceCurrency" content="SEK" />
+            </p>
 
             <button type="button">
                 Lägg i varukorg
             </button>
-
         </article>
-
     </main>
 
-
     <footer>
-
         <nav>
             <span>▶</span>
             <span>f</span>
@@ -130,9 +126,6 @@
         <small>
             Copyright © 2026 Kattstatistik. All Rights Reserved.
         </small>
-
     </footer>
-
 </body>
-
 </html>
