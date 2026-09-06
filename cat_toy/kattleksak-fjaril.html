@@ -19,9 +19,9 @@
         </a>
 
         <nav>
-            <a href="../klostrad/klostrad.html">Klösträd</a>
-            <a href="../kattsang/cat-bed.html">Kattbäddar</a>
-            <a href="cattoy.html">Kattleksaker</a>
+            <a href="../cat_tower/cat_tower.html">Klösträd</a>
+            <a href="../cat_bed/cat_bed.html">Kattbäddar</a>
+            <a href="../cat_toy/cat_toy.html">Kattleksaker</a>
         </nav>
 
         <search>
@@ -35,30 +35,32 @@
     </header>
 
 
-    <main>
+    <main itemscope itemtype="https://schema.org/Product">
 
-        <h1>Felineo Interaktiv Kattleksak 3-i-1 med Fjäril</h1>
+        <h1 itemprop="name">Felineo Interaktiv Kattleksak 3-i-1 med Fjäril</h1>
 
-        <article class="product">
+        <article>
 
-            <section class="product-images">
+            <section>
 
-                <img src="../images/3-i-1-fjaril.webp"
+                <img itemprop="image"
+                     src="../images/3-i-1-fjaril.webp"
                      alt="Interaktiv kattleksak 3-i-1 med fjäril">
 
-                <img src="../images/3-i-1-fjaril-2.webp"
+                <img itemprop="image"
+                     src="../images/3-i-1-fjaril-2.webp"
                      alt="Interaktiv kattleksak 3-i-1 med fjäril">
 
             </section>
 
 
-            <section class="product-info">
+            <section>
 
                 <h2>Tre leksaker i en för mer varierad lek</h2>
 
                 <h3>Om produkten</h3>
 
-                <p>
+                <p itemprop="description">
                     Ge din katt en varierad och interaktiv lekupplevelse med denna
                     3-i-1 kattleksak. Leksaken kombinerar en roterande fjäril,
                     en bollbana och en fjäder för att uppmuntra katten att leka,
@@ -72,7 +74,12 @@
 
                 <h3>Pris</h3>
 
-                <p>799 kr</p>
+                <p itemprop="offers"
+                   itemscope
+                   itemtype="https://schema.org/Offer">
+                    <span itemprop="price">799</span> kr
+                    <meta itemprop="priceCurrency" content="SEK">
+                </p>
 
                 <button type="button">
                     Lägg i varukorg

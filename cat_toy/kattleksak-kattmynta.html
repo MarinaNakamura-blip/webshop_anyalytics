@@ -19,9 +19,9 @@
         </a>
 
         <nav>
-            <a href="../klostrad/klostrad.html">Klösträd</a>
-            <a href="../kattsang/cat-bed.html">Kattbäddar</a>
-            <a href="cattoy.html">Kattleksaker</a>
+            <a href="../cat_tower/cat_tower.html">Klösträd</a>
+            <a href="../cat_bed/cat_bed.html">Kattbäddar</a>
+            <a href="../cat_toy/cat_toy.html">Kattleksaker</a>
         </nav>
 
         <search>
@@ -35,33 +35,36 @@
     </header>
 
 
-    <main>
+    <main itemscope itemtype="https://schema.org/Product">
 
-        <h1>Kattleksak med kattmynta 4-pack</h1>
+        <h1 itemprop="name">Kattleksak med kattmynta 4-pack</h1>
 
-        <article class="product">
+        <article>
 
-            <section class="product-images">
+            <section>
 
-                <img src="../images/kattleksak-kattmynta.jpg"
+                <img itemprop="image"
+                     src="../images/kattleksak-kattmynta.jpg"
                      alt="Kattleksaker med kattmynta">
 
-                <img src="../images/kattleksak-kattmynta-2.jpg"
+                <img itemprop="image"
+                     src="../images/kattleksak-kattmynta-2.jpg"
                      alt="Kattleksaker med kattmynta">
 
-                <img src="../images/kattleksak-kattmynta-3.jpg"
+                <img itemprop="image"
+                     src="../images/kattleksak-kattmynta-3.jpg"
                      alt="Kattleksaker med kattmynta">
 
             </section>
 
 
-            <section class="product-info">
+            <section>
 
                 <h2>Små leksaker som väcker kattens nyfikenhet</h2>
 
                 <h3>Om produkten</h3>
 
-                <p>
+                <p itemprop="description">
                     Ge din katt något roligt att leka med i detta set med fyra
                     mjuka kattleksaker med kattmynta. Setet innehåller en mus,
                     en dinosaurie, en morot och en citron.
@@ -75,7 +78,12 @@
 
                 <h3>Pris</h3>
 
-                <p>99 kr</p>
+                <p itemprop="offers"
+                   itemscope
+                   itemtype="https://schema.org/Offer">
+                    <span itemprop="price">99</span> kr
+                    <meta itemprop="priceCurrency" content="SEK">
+                </p>
 
                 <button type="button">
                     Lägg i varukorg
