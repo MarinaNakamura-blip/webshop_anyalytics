@@ -22,11 +22,3 @@ main > article > section:first-of-type img {
     height: 250px;
     object-fit: contain;
 }
-
-main > article > section:last-of-type details {
-    margin-top: 50px;
-}
-
-main > article > section:last-of-type details + details {
-    margin-top: 15px;
-}
