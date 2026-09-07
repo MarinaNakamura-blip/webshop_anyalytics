@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="sv">
 
@@ -16,6 +15,34 @@
     <title>Klösträd Olympia - Kattbutiken</title>
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="../product.css">
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("add-to-cart").addEventListener("click", function () {
+
+                dataLayer.push({ ecommerce: null });
+                dataLayer.push({
+                    event: "add_to_cart",
+                    ecommerce: {
+                        currency: "SEK",
+                        value: 3499,
+                        items: [
+                            {
+                                item_id: "SKU_12347",
+                                item_name: "Olympia",
+                                affiliation: "Google Merchandise Store",
+                                index: 0,
+                                item_category: "Klösträd",
+                                price: 3499,
+                                quantity: 1
+                            }
+                        ]
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
