@@ -2,7 +2,16 @@
 <html lang="sv">
 
 <head>
+    <meta charset="UTF-8">
 
+     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+i:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KD4LQ7KC');</script>
+    <!-- End Google Tag Manager -->
+    
     <title>Kattbädd Helsingborg - Kattbutiken</title>
 
     <link rel="stylesheet" href="../base.css">
@@ -11,11 +20,15 @@
 </head>
 
 <body>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD4LQ7KC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <header>
 
         <a href="../index.html">
-            <img src="../images/logo.jpg" alt="Kattbutikens logga">
+            <img itemprop="logo" src="../images/logo.jpg" alt="Kattbutikens logga">
         </a>
 
         <nav>
@@ -39,11 +52,11 @@
 
         <h1>Kattbädd Helsingborg</h1>
 
-        <article class="product">
+        <article itemscope itemtype="https://schema.org/Product">
 
-            <section class="product-images">
+            <section>
 
-                <img src="../images/helsingborg.webp"
+                <img itemprop="image" src="../images/helsingborg.webp"
                      alt="Kattbädd Helsingborg framifrån">
 
                 <img src="../images/helsingborg1.webp"
@@ -55,13 +68,13 @@
             </section>
 
 
-            <section class="product-info">
+            <section>
 
-                <h2>Elegant kattbädd</h2>
+                <h2 itemprop="name">Elegant kattbädd</h2>
 
                 <h3>Om produkten</h3>
 
-                <p>
+                <p itemprop="description">
                     Högkvalitativ djurbädd för katter, med sammetslen,
                     mjuk dyna, stilren stålram, tvättbart överdrag,
                     fylld med mjukt skumgummi, med höga kanter och lågt insteg.
@@ -83,7 +96,9 @@
 
                 <h3>Pris</h3>
 
-                <p>1499 kr</p>
+                <p itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    Price: <span itemprop="price">1499</span>kr
+                    <meta itemprop="priceCurrency" content="SEK"></p>
 
                 <button type="button">
                     Lägg i varukorg
