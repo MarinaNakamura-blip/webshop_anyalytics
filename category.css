@@ -19,6 +19,9 @@ main > article {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: #dbad90;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 article img {
