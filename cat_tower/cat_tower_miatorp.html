@@ -16,33 +16,7 @@
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="../product.css">
 
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("add-to-cart").addEventListener("click", function () {
-
-                dataLayer.push({ ecommerce: null });
-                dataLayer.push({
-                    event: "add_to_cart",
-                    ecommerce: {
-                        currency: "SEK",
-                        value: 1699,
-                        items: [
-                            {
-                                item_id: "SKU_12346",
-                                item_name: "Miatorp",
-                                affiliation: "Google Merchandise Store",
-                                index: 0,
-                                item_category: "Klösträd",
-                                price: 1699,
-                                quantity: 1
-                            }
-                        ]
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="../add_to_cart_miatorp.js" defer></script>
 </head>
 
 <body>

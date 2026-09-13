@@ -16,33 +16,7 @@
     <link rel="stylesheet" href="../base.css">
     <link rel="stylesheet" href="../product.css">
 
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("add-to-cart").addEventListener("click", function () {
-
-                dataLayer.push({ ecommerce: null });
-                dataLayer.push({
-                    event: "add_to_cart",
-                    ecommerce: {
-                        currency: "SEK",
-                        value: 3499,
-                        items: [
-                            {
-                                item_id: "SKU_12347",
-                                item_name: "Olympia",
-                                affiliation: "Google Merchandise Store",
-                                index: 0,
-                                item_category: "Klösträd",
-                                price: 3499,
-                                quantity: 1
-                            }
-                        ]
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="../add_to_cart_olympia.js" defer></script>
 </head>
 
 <body>
@@ -72,7 +46,7 @@
     </header>
 
     <main>
-        <h1>Klösträd Olympia</h1>
+        <h1 itemprop="name">Klösträd Olympia</h1>
 
         <article itemscope itemtype="https://schema.org/Product">
 
@@ -83,7 +57,7 @@
             </section>
 
             <section>
-                <h2 itemprop="name">Design, stabilitet och roligt</h2>
+                <h2>Design, stabilitet och roligt</h2>
 
                 <h3>Om produkten</h3>
 
@@ -108,7 +82,7 @@
                     <meta itemprop="priceCurrency" content="SEK">
                 </p>
 
-                <button type="button">
+                <button type="button" id="add-to-cart">
                     Lägg i varukorg
                 </button>
 
