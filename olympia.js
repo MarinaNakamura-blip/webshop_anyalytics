@@ -1,11 +1,5 @@
-console.log("Olympia JS loaded");
-
 document.getElementById("add_to_cart").addEventListener("click", function () {
-
-    console.log("Add to cart clicked");
-
     dataLayer.push({ ecommerce: null });
-
     dataLayer.push({
         event: "add_to_cart",
         ecommerce: {
@@ -22,6 +16,5 @@ document.getElementById("add_to_cart").addEventListener("click", function () {
             ]
         }
     });
-
 });
  
