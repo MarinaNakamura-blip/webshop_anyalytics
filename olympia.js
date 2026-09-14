@@ -1,62 +1,20 @@
-document.getElementById("add-to-cart").addEventListener("click", function () {
-    dataLayer.push({ ecommerce: null });
-    dataLayer.push({
-        event: "add_to_cart",
-        ecommerce: {
-            currency: "SEK",
-            value: 3499,
-            items: [
-                {
-                    item_id: "CT_OLYMPIA",
-                    item_name: "Klösträd Olympia",
-                    item_category: "Klösträd",
-                    price: 3499,
-                    quantity: 1
-                }
-            ]
-        }
-    });
-});
-
-console.log("Olympia JS loaded");
- 
 document.getElementById("add_to_cart").addEventListener("click", function () {
- 
-    console.log("Add to cart clicked");
- 
     dataLayer.push({ ecommerce: null });
- 
     dataLayer.push({
-
         event: "add_to_cart",
-
         ecommerce: {
-
             currency: "SEK",
-
             value: 3499,
-
             items: [
-
                 {
-
                     item_id: "CT_OLYMPIA",
-
                     item_name: "Klösträd Olympia",
-
                     item_category: "Klösträd",
-
                     price: 3499,
-
                     quantity: 1
-
                 }
-
             ]
-
         }
-
     });
- 
 });
  

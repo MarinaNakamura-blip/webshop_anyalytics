@@ -1,4 +1,4 @@
-document.getElementById("add-to-cart").addEventListener("click", function () {
+document.getElementById("add_to_cart").addEventListener("click", function () {
     dataLayer.push({ ecommerce: null });
     dataLayer.push({
         event: "add_to_cart",
